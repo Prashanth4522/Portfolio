@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">Portfolio</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">Designer & Developer</p>
+          <h1 class="hero-title">PRASHANTH B</h1>
+          <p class="hero-subtitle">
+            Designing clean, mobile-first web experiences with a strong focus on clarity, usability, and purpose.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-header">
+          <h2>About</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="grid-2">
+          <p>
+            I’m a UI and web designer who enjoys building clean, meaningful digital experiences. 
+My work focuses on simplicity, strong typography, and interfaces that feel calm, 
+clear, and easy to use.
+          </p>
+          <p>
+            I enjoy turning real problems into thoughtful design solutions. 
+Each project is an opportunity to remove distractions, focus on what matters, 
+and create experiences that serve people with clarity and intention.
+
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-header">
+          <h2>Selected Work</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects">
+          <article class="project-card">
+            <a
+              href="https://arise-worship.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <div class="project-meta">
+                <span class="project-label">WEB APP</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Arise Worship</h3>
+              <p class="project-description">
+                A multilingual worship platform designed for worship leaders and musicians to
+                access lyrics and chords in a clean, mobile-first experience focused on clarity
+                and usability.
+              </p>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-label">UI Design</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Minimal Dashboard</h3>
+            <p class="project-description">
+              A data-first interface designed around clarity, hierarchy, and just enough
+              red to highlight the moments that matter.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-label">Brand</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Quiet Identity System</h3>
+            <p class="project-description">
+              A black and white identity with a single accent color, built to feel calm,
+              grounded, and timeless across digital and print.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="contact-text">
+          Currently open to product, UI, and web design opportunities.
+          Let’s build something meaningful together.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:prashanth.b.960684@gmail.com" class="contact-link">prashanth.b.960684@gmail.com</a>
+          <a href="tel:+910000000000" class="contact-link"> +91 96068 43938</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year"></span> Prashanth B</span>
+      <span class="dot"></span>
+      <span>Designed with clarity and intention.</span>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
