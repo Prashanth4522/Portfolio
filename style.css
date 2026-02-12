@@ -269,6 +269,54 @@ main {
   line-height: 1.7;
 }
 
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  max-width: 960px;
+}
+
+.tool-group {
+  border-radius: var(--radius);
+  border: 1px solid var(--border-subtle);
+  padding: 1.75rem 1.6rem;
+  background: radial-gradient(circle at top left, #191919 0, var(--bg-elevated) 60%);
+  box-shadow: var(--shadow-soft);
+}
+
+.tool-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+}
+
+.tool-icon {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.tool-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tool-list li {
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.01);
+}
+
 .contact-text {
   max-width: 26rem;
   color: var(--muted);
@@ -320,6 +368,10 @@ main {
 @media (max-width: 960px) {
   .projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tools-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
